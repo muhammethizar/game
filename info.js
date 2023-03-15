@@ -10,20 +10,17 @@ function Check() {
     if (t > i) {
         count++
         attemptsEl.innerHTML = count
-        resultEl.innerHTML = 'Please guess another number that is bigger than your current guess!'
+        resultEl.innerHTML = 'Biraz yukari cik az söyledin!'
     }
     else if (t < i) {
         count++
         attemptsEl.innerHTML = count
-        resultEl.innerHTML = 'Please guess another number that is smaller than your current guess!'
+        resultEl.innerHTML = 'In biraz dedin!'
     }
     else {
         count++
         attemptsEl.innerHTML = count
-        resultEl.innerHTML = 'Congrats!!! You found the Number!'
+        resultEl.innerHTML = 'Aferin la bildin!'
     }
 }
-// Before:
-resultEl.innerHTML = 'Please guess another number that is bigger than your current guess!'
-// After:
-resultEl.innerHTML = `Please guess another number that is bigger than ${i}!`
+
