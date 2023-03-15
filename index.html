@@ -1,28 +1,35 @@
-<link href="bootstrap.min.css" rel="stylesheet">
-<!-- <h1>Salut VS CODE</h1> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
 
-<button type="button" class="btn btn-primary position-relative mt-5" style="margin-left: 50px;">
-    Deneme Sayisi
-    <span id="a" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-      0
-    </span>
-</button>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-<div class="d-grid gap-2 col-6 mx-auto mt-5">
+</head>
+<body>
 
-    <div class="mb-3">
+    <div class="card">
+        <div id="a" class="card-header d-grid gap-2 col-6 mx-auto mt-5">
+        
+        </div>
 
-        <h3>Bir Sayi Tahmin Et</h3>
+        <div class="card-body d-grid gap-2 col-6 mx-auto mt-5">
+          
+            <h5 class="card-title">Bir Sayi Tahmin Et</h5>
+          <div><input id="b" class="form-control" placeholder="1 ile 100 arasinda bir sayi gir"></div>
+          <div class="alert alert-success" role="alert"><h3 id="result"></h3></div>
+          <div class="d-grid gap-2 col-6 mx-auto"><button onclick="Check()" class="btn btn-success" type="button">Tikla</button></div>
 
-        <input id="b" class="form-control" placeholder="1 ile 100 arasinda bir sayi gir">
+        </div>
+
     </div>
 
-    <button onclick="Check()" class="btn btn-primary" type="button">Tikla</button>
-
-    <div class="alert alert-light" role="alert">
-        <h3 id="result"></h3>
-    </div>
-</div>
-
-<script src="info.js" defer></script>
-<script src="bootstrap.bundle.min.js" defer></script>
+    
+    <script src="info.js" defer></script>
+    
+</body>
+</html>
