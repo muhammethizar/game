@@ -16,7 +16,7 @@ function Check() {
     else if (t < i) {
         count++
         attemptsEl.innerHTML =text+count
-        resultEl.innerHTML = 'In biraz az dedin!'
+        resultEl.innerHTML = 'In biraz cok dedin!'
     }
     else {
         count++
